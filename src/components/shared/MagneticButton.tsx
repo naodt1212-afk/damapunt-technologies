@@ -9,9 +9,12 @@ type Props = {
   variant?: "primary" | "ghost";
   className?: string;
   external?: boolean;
+  type?: "button" | "submit" | "reset";
+  disabled?: boolean;
 };
 
-export function MagneticButton({ children, href, onClick, variant = "primary", className, external }: Props) {
+export function MagneticButton({ children, href, onClick, variant = "primary", className, external, type = "button", disabled }: Props) {
+
   const ref = useRef<HTMLAnchorElement & HTMLButtonElement>(null);
   const x = useMotionValue(0);
   const y = useMotionValue(0);
@@ -63,12 +66,15 @@ export function MagneticButton({ children, href, onClick, variant = "primary", c
   return (
     <button
       ref={ref as React.RefObject<HTMLButtonElement>}
+      type={type}
+      disabled={disabled}
       onClick={onClick}
       onMouseMove={handleMove}
       onMouseLeave={handleLeave}
-      className={cn(base, styles, className)}
+      className={cn(base, styles, className, disabled && "opacity-60 cursor-not-allowed")}
     >
       {inner}
     </button>
+
   );
 }

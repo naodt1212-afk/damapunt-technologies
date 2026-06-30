@@ -60,23 +60,22 @@ export function Contact() {
                 />
               </div>
               <div className="mt-7 flex flex-wrap items-center gap-4">
-                <MagneticButton onClick={() => {}}>
-                  <button type="submit" disabled={state === "loading"} className="inline-flex items-center gap-2">
-                    {state === "loading" ? (
-                      <>
-                        <Loader2 size={16} className="animate-spin" /> Sending…
-                      </>
-                    ) : state === "done" ? (
-                      <>
-                        <Check size={16} /> Message sent
-                      </>
-                    ) : (
-                      <>
-                        <Send size={15} /> Send Message
-                      </>
-                    )}
-                  </button>
+                <MagneticButton type="submit" disabled={state === "loading"}>
+                  {state === "loading" ? (
+                    <>
+                      <Loader2 size={16} className="animate-spin" /> Sending…
+                    </>
+                  ) : state === "done" ? (
+                    <>
+                      <Check size={16} /> Message sent
+                    </>
+                  ) : (
+                    <>
+                      <Send size={15} /> Send Message
+                    </>
+                  )}
                 </MagneticButton>
+
                 {state === "error" && (
                   <span className="text-xs text-destructive">{err}</span>
                 )}
