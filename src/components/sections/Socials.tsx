@@ -17,7 +17,7 @@ const socials: Array<{ label: string; href: string; icon: ReactNode }> = [
   { label: "Instagram", href: "https://instagram.com/Frontmanx12", icon: <Instagram size={18} /> },
   { label: "GitHub", href: "https://github.com/Frontmanx12", icon: <Github size={18} /> },
   { label: "LinkedIn", href: "https://www.linkedin.com/in/Frontmanx12", icon: <Linkedin size={18} /> },
-  { label: "Email", href: "mailto:[email protected]", icon: <Mail size={18} /> },
+  { label: "Email", href: "mailto:naodt1212@gmail.com", icon: <Mail size={18} /> },
 ];
 
 export function Socials() {
