@@ -90,6 +90,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Damapunt Technologies — Premium Software Engineering" },
+      { name: "description", content: "Damapunt Technologies: A premium software company crafting cinematic digital products for global businesses." },
+      { property: "og:description", content: "Damapunt Technologies: A premium software company crafting cinematic digital products for global businesses." },
+      { name: "twitter:description", content: "Damapunt Technologies: A premium software company crafting cinematic digital products for global businesses." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/XpCrQJ9Z4KdJe6JkIgfOIWJk2ox2/social-images/social-1782834197353-ChatGPT_Image_Jun_30,_2026,_06_41_55_PM.webp" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/XpCrQJ9Z4KdJe6JkIgfOIWJk2ox2/social-images/social-1782834197353-ChatGPT_Image_Jun_30,_2026,_06_41_55_PM.webp" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
