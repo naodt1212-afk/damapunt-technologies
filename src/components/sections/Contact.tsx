@@ -92,7 +92,7 @@ export function Contact() {
           <Reveal delay={0.1}>
             <div className="space-y-4">
               <a
-                href="mailto:[email protected]"
+                href="mailto:naodt1212@gmail.com"
                 className="flex items-center justify-between gap-4 rounded-2xl border border-white/[0.06] bg-surface px-6 py-5 transition-colors hover:border-primary/30"
               >
                 <div className="flex items-center gap-4">
@@ -101,13 +101,13 @@ export function Contact() {
                   </span>
                   <div>
                     <p className="text-xs uppercase tracking-[0.18em] text-muted-foreground">Email</p>
-                    <p className="mt-0.5 text-foreground">[email protected]</p>
+                    <p className="mt-0.5 text-foreground">naodt1212@gmail.com</p>
                   </div>
                 </div>
                 <span className="text-xs text-silver/60">→</span>
               </a>
               <a
-                href="tel:+251000000000"
+                href="tel:+251983118903"
                 className="flex items-center justify-between gap-4 rounded-2xl border border-white/[0.06] bg-surface px-6 py-5 transition-colors hover:border-primary/30"
               >
                 <div className="flex items-center gap-4">
@@ -116,7 +116,7 @@ export function Contact() {
                   </span>
                   <div>
                     <p className="text-xs uppercase tracking-[0.18em] text-muted-foreground">Phone</p>
-                    <p className="mt-0.5 text-foreground">+251 (placeholder)</p>
+                    <p className="mt-0.5 text-foreground">+251 98 311 8903</p>
                   </div>
                 </div>
                 <span className="text-xs text-silver/60">→</span>
