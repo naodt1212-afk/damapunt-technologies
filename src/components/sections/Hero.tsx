@@ -40,13 +40,14 @@ export function Hero() {
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
-            className="mt-7 font-display text-[clamp(2.75rem,6.5vw,5.75rem)] leading-[0.98] tracking-tight"
+            className="mt-7 font-display text-[clamp(3.5rem,9vw,8rem)] leading-[0.95] tracking-tight"
           >
             <span className="text-gradient block">Building Premium</span>
             <span className="block">
               Digital <em className="not-italic text-gradient-green">Products.</em>
             </span>
           </motion.h1>
+
 
           <motion.p
             initial={{ opacity: 0, y: 16 }}

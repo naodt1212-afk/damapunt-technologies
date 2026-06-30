@@ -2,6 +2,8 @@ import { motion, useScroll, useTransform } from "motion/react";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
+import logo from "@/assets/damapunt-logo.png.asset.json";
+
 
 const links = [
   { href: "#services", label: "Services" },
@@ -24,12 +26,11 @@ export function Nav() {
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
         <a href="#top" className="flex items-center gap-2.5">
-          <span className="grid h-9 w-9 place-items-center rounded-xl bg-primary/15 ring-1 ring-primary/30">
-            <span className="font-display text-xl text-primary-glow">D</span>
-          </span>
+          <img src={logo.url} alt="Damapunt Technologies" className="h-10 w-10 object-contain" />
           <span className="font-display text-lg tracking-tight">Damapunt</span>
         </a>
         <nav className="hidden items-center gap-1 md:flex">
+
           {links.map((l) => (
             <a
               key={l.href}
