@@ -1,0 +1,6 @@
+# Damapunt Technologies
+
+> Premium Ethiopian software development studio building websites, enterprise software, AI solutions, SaaS platforms, and mobile apps for ambitious businesses worldwide.
+
+## Pages
+- [Home](/): Services, selected work, leadership, process, and contact.
