@@ -118,7 +118,7 @@ export function Leadership() {
             <PersonCard
               role="Strategic Partner"
               title="CO-FOUNDER & BUSINESS PARTNER"
-              name="Natnael"
+              name="Natnael Gorems"
               bio="Natnael is a strategic partner at Damapunt Technologies, contributing to business development, collaboration, and long-term growth. Together with the team, he helps strengthen client relationships and supports the company's mission of delivering innovative digital solutions with professionalism and reliability."
               img={natnaelAsset.url}
               handle="Frontmanx12"
