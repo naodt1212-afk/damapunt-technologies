@@ -40,12 +40,6 @@ const projects: Project[] = [
     desc: "Beautiful link-in-bio platform tailored for Ethiopian creators.",
     url: "https://ethioteftef.base44.app/",
   },
-  {
-    title: "Zegora Agency",
-    category: "Digital Marketing Agency Website",
-    desc: "A premium digital marketing agency website designed with a modern user experience, responsive layouts, elegant branding, and high-performance web technologies that help businesses establish a strong online presence.",
-    url: "https://zegoraagency.com/",
-  },
 ];
 
 function shotUrl(target: string) {
