@@ -107,7 +107,7 @@ export function Leadership() {
           <Reveal>
             <PersonCard
               role="Founder & CEO"
-              title="Meet Our Founder & CEO"
+              title="FOUNDER & CEO"
               name="Naod Teferi"
               bio="Naod Teferi is the Founder and CEO of Damapunt Technologies. Passionate about software engineering, UI/UX design, and digital innovation, he leads the company with a focus on building high-quality websites, enterprise software, AI-powered solutions, and scalable digital products. His vision is to create technology that empowers businesses, delivers measurable value, and showcases world-class software engineering from Ethiopia to clients around the globe."
               img={naodAsset.url}
@@ -117,7 +117,7 @@ export function Leadership() {
           <Reveal delay={0.1}>
             <PersonCard
               role="Strategic Partner"
-              title="Strategic Partner"
+              title="CO-FOUNDER & BUSINESS PARTNER"
               name="Natnael"
               bio="Natnael is a strategic partner at Damapunt Technologies, contributing to business development, collaboration, and long-term growth. Together with the team, he helps strengthen client relationships and supports the company's mission of delivering innovative digital solutions with professionalism and reliability."
               img={natnaelAsset.url}
@@ -127,7 +127,7 @@ export function Leadership() {
           <Reveal delay={0.2}>
             <PersonCard
               role="Creative Partner"
-              title="Video Editor & Graphic Designer"
+              title={"\u00A0CREATIVE DIRECTOR"}
               name="Semir"
               bio="Semir is the Creative Partner at Damapunt Technologies, specializing in professional video editing, motion graphics, branding, and visual design. He transforms ideas into compelling visual experiences that strengthen brand identity, enhance storytelling, and deliver engaging content across digital platforms. His creativity and attention to detail help businesses communicate with impact through high-quality design and cinematic visuals."
               img={semirAsset.url}
