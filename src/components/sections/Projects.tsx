@@ -41,10 +41,10 @@ const projects: Project[] = [
     url: "https://ethioteftef.base44.app/",
   },
   {
-    title: "Lead Frontman AI",
-    category: "AI Platform",
-    desc: "AI workspace with assistants, automations, and conversational tools.",
-    url: "https://lead-frontman-ai.base44.app/",
+    title: "Zegora Agency",
+    category: "Digital Marketing Agency Website",
+    desc: "A premium digital marketing agency website designed with a modern user experience, responsive layouts, elegant branding, and high-performance web technologies that help businesses establish a strong online presence.",
+    url: "https://zegoraagency.com/",
   },
 ];
 

@@ -1,7 +1,7 @@
 import { Reveal } from "@/components/shared/Reveal";
 import naodAsset from "@/assets/naod.png.asset.json";
-import natnaelAsset from "@/assets/natnael.png.asset.json";
-import semirAsset from "@/assets/semir.png.asset.json";
+import natnaelAsset from "@/assets/semir.png.asset.json";
+import semirAsset from "@/assets/natnael.png.asset.json";
 import { motion } from "motion/react";
 import { Github, Instagram, Linkedin, Send, type LucideIcon } from "lucide-react";
 import type { ReactNode } from "react";
