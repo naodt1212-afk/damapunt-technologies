@@ -3,7 +3,8 @@ import { useRef } from "react";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { MagneticButton } from "@/components/shared/MagneticButton";
 import { Stat } from "@/components/shared/Stat";
-import portrait from "@/assets/portrait-hero.jpg";
+import heroAsset from "@/assets/hero-developer.png.asset.json";
+
 
 export function Hero() {
   const ref = useRef<HTMLDivElement>(null);
@@ -101,8 +102,8 @@ export function Hero() {
           />
           <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-surface shadow-[var(--shadow-elevated)]">
             <img
-              src={portrait}
-              alt="Naod Teferi, Founder & CEO of Damapunt Technologies"
+              src={heroAsset.url}
+              alt="Damapunt Technologies engineer building premium software"
               width={1024}
               height={1280}
               className="aspect-[4/5] w-full object-cover"
