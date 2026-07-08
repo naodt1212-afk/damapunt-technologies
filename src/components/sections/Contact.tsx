@@ -1,7 +1,7 @@
 import { Reveal } from "@/components/shared/Reveal";
 import { MagneticButton } from "@/components/shared/MagneticButton";
 import { useState } from "react";
-import { Mail, Phone, Send, Loader2, Check } from "lucide-react";
+import { Mail, Phone, Send, Loader2, Check, MessageCircle } from "lucide-react";
 import { submitContact } from "@/lib/contact.functions";
 import { Socials } from "@/components/sections/Socials";
 
