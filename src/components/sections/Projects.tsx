@@ -40,6 +40,25 @@ const projects: Project[] = [
     desc: "Beautiful link-in-bio platform tailored for Ethiopian creators.",
     url: "https://ethioteftef.base44.app/",
   },
+  {
+    title: "Habesha House",
+    category: "Digital Restaurant Menu",
+    desc: "A modern digital menu platform that enables restaurants and cafés to showcase their menus through a clean, responsive, and mobile-friendly experience.",
+    url: "https://habesha-house.vercel.app/",
+  },
+  {
+    title: "Zegora Agency",
+    category: "International Recruitment Agency",
+    desc: "A professional recruitment agency website connecting qualified women from Ethiopia with legal international employment opportunities through transparent and ethical recruitment services.",
+    url: "https://zegoraagency.com/",
+  },
+  {
+    title: "Ethio Massage",
+    category: "Home Massage Service Platform",
+    desc: "A premium wellness platform that allows customers to conveniently book professional home massage services with a modern, user-friendly experience.",
+    url: "https://ethiomassage.com/",
+  },
+
 ];
 
 function shotUrl(target: string) {
