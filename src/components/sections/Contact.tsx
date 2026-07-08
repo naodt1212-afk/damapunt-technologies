@@ -1,7 +1,7 @@
 import { Reveal } from "@/components/shared/Reveal";
 import { MagneticButton } from "@/components/shared/MagneticButton";
 import { useState } from "react";
-import { Mail, Phone, Send, Loader2, Check } from "lucide-react";
+import { Mail, Phone, Send, Loader2, Check, MessageCircle } from "lucide-react";
 import { submitContact } from "@/lib/contact.functions";
 import { Socials } from "@/components/sections/Socials";
 
@@ -90,6 +90,30 @@ export function Contact() {
 
           <Reveal delay={0.1}>
             <div className="space-y-4">
+              {[
+                { handle: "@damapunttechnologies", user: "damapunttechnologies" },
+                { handle: "@Damapunt", user: "Damapunt" },
+              ].map(({ handle, user }) => (
+                <a
+                  key={user}
+                  href={`https://t.me/${user}?text=${encodeURIComponent("Hi Damapunt Technologies, I need a website.")}`}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="flex items-center justify-between gap-4 rounded-2xl border border-white/[0.06] bg-surface px-6 py-5 transition-colors hover:border-primary/30"
+                >
+                  <div className="flex items-center gap-4">
+                    <span className="grid h-11 w-11 place-items-center rounded-xl bg-primary/10 text-primary-glow ring-1 ring-primary/20">
+                      <MessageCircle size={18} />
+                    </span>
+                    <div>
+                      <p className="text-xs uppercase tracking-[0.18em] text-muted-foreground">Telegram</p>
+                      <p className="mt-0.5 text-foreground">{handle}</p>
+                    </div>
+                  </div>
+                  <span className="text-xs text-silver/60">→</span>
+                </a>
+              ))}
+
               <a
                 href="mailto:naodt1212@gmail.com"
                 className="flex items-center justify-between gap-4 rounded-2xl border border-white/[0.06] bg-surface px-6 py-5 transition-colors hover:border-primary/30"
