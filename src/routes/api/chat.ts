@@ -32,7 +32,7 @@ export const Route = createFileRoute("/api/chat")({
 
           const gateway = createLovableAiGatewayProvider(key);
           const result = streamText({
-            model: gateway("google/gemini-3-flash-preview"),
+            model: gateway("google/gemini-3.1-flash-lite"),
             system: SYSTEM_PROMPT,
             messages: messages.map((m) => ({
               role: m.role as "user" | "assistant",
