@@ -2,19 +2,8 @@ import { Reveal } from "@/components/shared/Reveal";
 import { MagneticButton } from "@/components/shared/MagneticButton";
 import { useState } from "react";
 import { Mail, Phone, Send, Loader2, Check, MessageCircle } from "lucide-react";
-import emailjs from "@emailjs/browser";
-import { z } from "zod";
+import { submitContact } from "@/lib/contact.functions";
 import { Socials } from "@/components/sections/Socials";
-
-const ContactSchema = z.object({
-  name: z.string().trim().min(1, "Name is required").max(120),
-  email: z.string().trim().email("Enter a valid email").max(200),
-  message: z.string().trim().min(5, "Please add a short message").max(4000),
-});
-
-const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID as string;
-const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID as string;
-const EMAILJS_PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY as string;
 
 export function Contact() {
   const [state, setState] = useState<"idle" | "loading" | "done" | "error">("idle");
@@ -22,37 +11,19 @@ export function Contact() {
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    if (state === "loading") return;
     setErr(null);
-    const form = e.currentTarget;
-    const fd = new FormData(form);
-    const parsed = ContactSchema.safeParse({
-      name: String(fd.get("name") ?? ""),
-      email: String(fd.get("email") ?? ""),
-      message: String(fd.get("message") ?? ""),
-    });
-    if (!parsed.success) {
-      setErr(parsed.error.issues[0]?.message ?? "Please check the form.");
-      setState("error");
-      return;
-    }
     setState("loading");
+    const fd = new FormData(e.currentTarget);
     try {
-      await emailjs.send(
-        EMAILJS_SERVICE_ID,
-        EMAILJS_TEMPLATE_ID,
-        {
-          name: parsed.data.name,
-          email: parsed.data.email,
-          message: parsed.data.message,
-          reply_to: parsed.data.email,
-          submitted_at: new Date().toLocaleString(),
-          to_email: "naodt1212@gmail.com",
+      await submitContact({
+        data: {
+          name: String(fd.get("name") ?? ""),
+          email: String(fd.get("email") ?? ""),
+          message: String(fd.get("message") ?? ""),
         },
-        { publicKey: EMAILJS_PUBLIC_KEY },
-      );
+      });
       setState("done");
-      form.reset();
+      e.currentTarget.reset();
     } catch (e) {
       setErr(e instanceof Error ? e.message : "Could not send. Try Telegram instead.");
       setState("error");
